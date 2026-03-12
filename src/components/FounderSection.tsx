@@ -1,11 +1,20 @@
+import founderPhoto from "@/assets/leonardo-antunes.jpeg";
+
 const FounderSection = () => (
   <section id="fundador" className="section-spacing border-t border-subtle">
     <div className="container-editorial">
       <p className="text-sm uppercase tracking-widest text-muted-foreground mb-8 font-light">Fundador</p>
       <div className="grid md:grid-cols-2 gap-12 md:gap-20">
-        <h2 className="heading-section text-foreground">
-          Leonardo Antunes
-        </h2>
+        <div>
+          <img
+            src={founderPhoto}
+            alt="Leonardo Antunes — Fundador do Mezanino Estúdio Criativo"
+            className="w-full max-w-sm aspect-[3/4] object-cover object-top grayscale hover:grayscale-0 transition-all duration-700"
+          />
+          <h2 className="heading-section text-foreground mt-8">
+            Leonardo Antunes
+          </h2>
+        </div>
         <div className="space-y-6">
           <p className="body-editorial">
             Leonardo Antunes atua na concepção e condução de projetos estratégicos na interface entre comunicação, planejamento criativo e ambientes digitais.
