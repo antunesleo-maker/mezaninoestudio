@@ -1,3 +1,5 @@
+import Reveal from "./Reveal";
+
 const services = [
   {
     title: "Planejamento Estratégico",
@@ -24,28 +26,31 @@ const services = [
 const ServicesSection = () => (
   <section id="atuacao" className="section-spacing border-t border-subtle">
     <div className="container-editorial">
-      <p className="text-sm uppercase tracking-widest text-muted-foreground mb-8 font-light">Atuação</p>
-      <h2 className="heading-section text-foreground mb-16 max-w-xl">
-        Áreas de atuação
-      </h2>
+      <Reveal>
+        <p className="text-sm uppercase tracking-widest text-muted-foreground mb-8 font-light">Atuação</p>
+      </Reveal>
+      <Reveal delay={100}>
+        <h2 className="heading-section text-foreground mb-16 max-w-xl">
+          Áreas de atuação
+        </h2>
+      </Reveal>
       <div className="space-y-0">
         {services.map((service, i) => (
-          <div
-            key={i}
-            className="grid md:grid-cols-3 gap-4 md:gap-12 py-8 border-t border-subtle group"
-          >
-            <div className="flex items-baseline gap-4">
-              <span className="text-xs text-muted-foreground font-light tabular-nums">
-                {String(i + 1).padStart(2, "0")}
-              </span>
-              <h3 className="heading-subsection text-foreground group-hover:opacity-70 transition-opacity">
-                {service.title}
-              </h3>
+          <Reveal key={i} delay={150 + i * 80}>
+            <div className="grid md:grid-cols-3 gap-4 md:gap-12 py-8 border-t border-subtle group">
+              <div className="flex items-baseline gap-4">
+                <span className="text-xs text-muted-foreground font-light tabular-nums">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <h3 className="heading-subsection text-foreground group-hover:opacity-70 transition-opacity">
+                  {service.title}
+                </h3>
+              </div>
+              <p className="body-editorial md:col-span-2">
+                {service.description}
+              </p>
             </div>
-            <p className="body-editorial md:col-span-2">
-              {service.description}
-            </p>
-          </div>
+          </Reveal>
         ))}
       </div>
     </div>
