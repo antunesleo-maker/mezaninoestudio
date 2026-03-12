@@ -1,30 +1,30 @@
 import Reveal from "./Reveal";
 
 const services = [
-  {
-    title: "Planejamento Estratégico",
-    description: "Desenvolvimento de estratégias para projetos institucionais, culturais e digitais.",
-  },
-  {
-    title: "Planejamento Criativo",
-    description: "Estruturação de conceitos, narrativas e direções criativas para iniciativas e programas.",
-  },
-  {
-    title: "Articulação de Projetos",
-    description: "Concepção e organização de iniciativas em ambientes institucionais e culturais.",
-  },
-  {
-    title: "Curadoria e Avaliação",
-    description: "Participação em processos de seleção, curadoria e análise de projetos.",
-  },
-  {
-    title: "Comunicação Institucional",
-    description: "Estratégias de posicionamento, narrativa institucional e organização de comunicação.",
-  },
-];
+{
+  title: "Planejamento Estratégico",
+  description: "Desenvolvimento de estratégias para projetos institucionais, culturais e digitais."
+},
+{
+  title: "Planejamento Criativo",
+  description: "Estruturação de conceitos, narrativas e direções criativas para iniciativas e programas."
+},
+{
+  title: "Articulação de Projetos",
+  description: "Concepção e organização de iniciativas em ambientes institucionais e culturais."
+},
+{
+  title: "Curadoria e Avaliação",
+  description: "Participação em processos de seleção, curadoria e análise de projetos."
+},
+{
+  title: "Comunicação Institucional",
+  description: "Estratégias de posicionamento, narrativa institucional e organização de comunicação."
+}];
 
-const ServicesSection = () => (
-  <section id="atuacao" className="section-spacing border-t border-subtle">
+
+const ServicesSection = () =>
+<section id="atuacao" className="section-spacing border-t border-subtle bg-destructive-foreground">
     <div className="container-editorial">
       <Reveal>
         <p className="text-sm uppercase tracking-widest text-muted-foreground mb-8 font-light">Atuação</p>
@@ -35,8 +35,8 @@ const ServicesSection = () => (
         </h2>
       </Reveal>
       <div className="space-y-0">
-        {services.map((service, i) => (
-          <Reveal key={i} delay={150 + i * 80}>
+        {services.map((service, i) =>
+      <Reveal key={i} delay={150 + i * 80}>
             <div className="grid md:grid-cols-3 gap-4 md:gap-12 py-8 border-t border-subtle group">
               <div className="flex items-baseline gap-4">
                 <span className="text-xs text-muted-foreground font-light tabular-nums">
@@ -51,10 +51,10 @@ const ServicesSection = () => (
               </p>
             </div>
           </Reveal>
-        ))}
+      )}
       </div>
     </div>
-  </section>
-);
+  </section>;
+
 
 export default ServicesSection;
