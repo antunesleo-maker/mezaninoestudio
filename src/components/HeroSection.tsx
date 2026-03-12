@@ -7,7 +7,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="min-h-screen flex flex-col pt-16 md:pt-20 bg-black">
+    <section className="min-h-screen flex flex-col pt-16 md:pt-20 bg-primary-foreground">
       <Reveal>
         <div className="w-full overflow-hidden">
           <img

@@ -1,7 +1,7 @@
 import Reveal from "./Reveal";
 
 const AboutSection = () =>
-<section id="sobre" className="section-spacing border-t border-subtle bg-black">
+<section id="sobre" className="section-spacing border-t border-subtle bg-primary-foreground">
     <div className="container-editorial">
       <Reveal>
         <p className="text-sm uppercase tracking-widest text-muted-foreground mb-8 font-light">Sobre</p>
