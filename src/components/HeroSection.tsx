@@ -7,18 +7,18 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="min-h-screen flex flex-col pt-16 md:pt-20">
+    <section className="min-h-screen flex flex-col pt-16 md:pt-20 bg-black">
       <Reveal>
         <div className="w-full overflow-hidden">
           <img
             src={capaImage}
             alt="Mezanino Estúdio Criativo — identidade visual com formas geométricas"
-            className="w-full h-48 md:h-72 lg:h-96 object-cover"
-          />
+            className="w-full h-48 md:h-72 lg:h-96 object-cover" />
+          
         </div>
       </Reveal>
 
-      <div className="flex-1 flex items-center section-spacing">
+      <div className="flex-1 flex items-center section-spacing bg-white">
         <div className="container-editorial">
           <div className="max-w-3xl">
             <Reveal delay={100}>
@@ -51,25 +51,25 @@ const HeroSection = () => {
             <Reveal delay={400}>
               <div className="flex flex-wrap gap-4">
                 {[
-                  { label: "Sobre", href: "#sobre" },
-                  { label: "Atuação", href: "#atuacao" },
-                  { label: "Contato", href: "#contato" },
-                ].map((item) => (
-                  <button
-                    key={item.href}
-                    onClick={() => scrollTo(item.href)}
-                    className="text-sm uppercase tracking-widest font-light text-foreground border border-foreground/20 px-6 py-3 hover:bg-foreground hover:text-background transition-all duration-300"
-                  >
+                { label: "Sobre", href: "#sobre" },
+                { label: "Atuação", href: "#atuacao" },
+                { label: "Contato", href: "#contato" }].
+                map((item) =>
+                <button
+                  key={item.href}
+                  onClick={() => scrollTo(item.href)}
+                  className="text-sm uppercase tracking-widest font-light text-foreground border border-foreground/20 px-6 py-3 hover:bg-foreground hover:text-background transition-all duration-300">
+                  
                     {item.label}
                   </button>
-                ))}
+                )}
               </div>
             </Reveal>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default HeroSection;
