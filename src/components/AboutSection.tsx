@@ -1,7 +1,7 @@
 import Reveal from "./Reveal";
 
-const AboutSection = () => (
-  <section id="sobre" className="section-spacing border-t border-subtle">
+const AboutSection = () =>
+<section id="sobre" className="section-spacing border-t border-subtle bg-primary">
     <div className="container-editorial">
       <Reveal>
         <p className="text-sm uppercase tracking-widest text-muted-foreground mb-8 font-light">Sobre</p>
@@ -27,7 +27,7 @@ const AboutSection = () => (
         </Reveal>
       </div>
     </div>
-  </section>
-);
+  </section>;
+
 
 export default AboutSection;
