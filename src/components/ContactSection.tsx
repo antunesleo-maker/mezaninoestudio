@@ -40,7 +40,7 @@ const ContactSection = () => {
                   href="https://www.linkedin.com/company/mezaninoestudio"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-[hsl(var(--light-muted))] hover:text-[hsl(var(--light-fg))] transition-colors duration-300 text-base font-light"
+                  className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors duration-300 text-base font-light"
                 >
                   <Linkedin size={18} strokeWidth={1.5} />
                   LinkedIn
