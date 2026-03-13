@@ -92,7 +92,7 @@ const ContactSection = () => {
                   </div>
                   <button
                     type="submit"
-                    className="text-sm uppercase tracking-[0.2em] font-medium text-[hsl(var(--light-bg))] bg-[hsl(var(--light-fg))] px-10 py-4 hover:opacity-80 transition-opacity duration-300"
+                    className="text-sm uppercase tracking-[0.2em] font-medium text-background bg-foreground px-10 py-4 hover:opacity-80 transition-opacity duration-300"
                   >
                     Enviar
                   </button>
