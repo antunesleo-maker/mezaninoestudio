@@ -26,7 +26,7 @@ const FounderSection = () => (
           <div className="space-y-6">
             <Reveal delay={100}>
               <p className="body-editorial">
-                Leonardo Antunes atua na concepção e condução de projetos estratégicos na interface entre comunicação, planejamento criativo e ambientes digitais.
+                Atua na concepção e condução de projetos estratégicos na interface entre comunicação, planejamento criativo e ambientes digitais.
               </p>
             </Reveal>
             <Reveal delay={180}>
