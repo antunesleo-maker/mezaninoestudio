@@ -1,19 +1,32 @@
 import { useState } from "react";
 import { Mail, Linkedin } from "lucide-react";
+import { supabase } from "@/integrations/supabase/client";
 import Reveal from "./Reveal";
 
 const ContactSection = () => {
   const [form, setForm] = useState({ nome: "", email: "", organizacao: "", mensagem: "" });
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const subject = encodeURIComponent(`Contato — ${form.nome} (${form.organizacao || "sem organização"})`);
-    const body = encodeURIComponent(
-      `Nome: ${form.nome}\nEmail: ${form.email}\nOrganização: ${form.organizacao}\n\nMensagem:\n${form.mensagem}`
-    );
-    window.location.href = `mailto:mezaninoestudio@gmail.com?subject=${subject}&body=${body}`;
-    setSubmitted(true);
+    setSending(true);
+    setError("");
+
+    try {
+      const { data, error: fnError } = await supabase.functions.invoke("send-contact", {
+        body: form,
+      });
+
+      if (fnError) throw fnError;
+      setSubmitted(true);
+    } catch (err: any) {
+      console.error("Erro ao enviar:", err);
+      setError("Erro ao enviar mensagem. Tente novamente.");
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
@@ -90,11 +103,15 @@ const ContactSection = () => {
                       className="w-full bg-transparent border-b border-border py-3 text-foreground font-light focus:outline-none focus:border-foreground transition-colors duration-500 resize-none"
                     />
                   </div>
+                  {error && (
+                    <p className="text-red-400 text-sm font-light">{error}</p>
+                  )}
                   <button
                     type="submit"
-                    className="text-sm uppercase tracking-[0.2em] font-medium text-background bg-foreground px-10 py-4 hover:opacity-80 transition-opacity duration-300"
+                    disabled={sending}
+                    className="text-sm uppercase tracking-[0.2em] font-medium text-background bg-foreground px-10 py-4 hover:opacity-80 transition-opacity duration-300 disabled:opacity-50"
                   >
-                    Enviar
+                    {sending ? "Enviando..." : "Enviar"}
                   </button>
                 </form>
               )}
