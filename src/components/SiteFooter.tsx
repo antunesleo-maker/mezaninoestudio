@@ -1,11 +1,11 @@
 const SiteFooter = () => (
-  <footer className="border-t border-subtle py-12">
+  <footer className="border-t border-border py-12 bg-background">
     <div className="container-editorial flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-      <p className="font-heading text-lg font-medium text-foreground tracking-tight">
+      <p className="font-heading text-lg font-normal text-foreground tracking-tight">
         Mezanino Estúdio Criativo
       </p>
-      <p className="text-xs text-muted-foreground font-light tracking-wide">
-        © {new Date().getFullYear()} Todos os direitos reservados.
+      <p className="text-[11px] text-muted-foreground font-light tracking-[0.15em] uppercase">
+        © {new Date().getFullYear()} Todos os direitos reservados
       </p>
     </div>
   </footer>
