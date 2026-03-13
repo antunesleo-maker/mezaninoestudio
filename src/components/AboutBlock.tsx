@@ -16,25 +16,17 @@ const AboutBlock = () => (
       </Reveal>
     </section>
 
-    {/* About text — black bg */}
-    <section id="about" className="section-fullscreen bg-background">
+    {/* About text — white bg, black text */}
+    <section id="about" className="section-fullscreen section-light">
       <div className="container-editorial py-24 md:py-32">
-        <div className="max-w-3xl">
+        <div className="max-w-3xl space-y-8">
           <Reveal>
-            <p className="heading-display text-foreground">
+            <p className="heading-display text-[hsl(var(--light-fg))]">
               Mezanino Estúdio Criativo é uma plataforma dedicada ao desenvolvimento de pensamento estratégico, planejamento criativo e articulação de projetos em diferentes contextos institucionais.
             </p>
           </Reveal>
-        </div>
-      </div>
-    </section>
-
-    {/* Second text block */}
-    <section className="section-fullscreen bg-background">
-      <div className="container-editorial py-24 md:py-32">
-        <div className="max-w-3xl">
-          <Reveal>
-            <p className="heading-display text-foreground">
+          <Reveal delay={100}>
+            <p className="heading-display text-[hsl(var(--light-fg))]">
               Nasce da experiência em produção de projetos, curadoria, gestão de equipes e desenvolvimento de iniciativas que operam na interface entre estratégia, comunicação e inovação.
             </p>
           </Reveal>
