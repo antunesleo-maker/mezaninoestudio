@@ -78,7 +78,7 @@ const ContactSection = () => {
                     </div>
                   ))}
                   <div>
-                    <label className="block text-xs uppercase tracking-[0.2em] text-[hsl(var(--light-muted))] mb-3 font-light">
+                    <label className="block text-xs uppercase tracking-[0.2em] text-muted-foreground mb-3 font-light">
                       Mensagem
                     </label>
                     <textarea
