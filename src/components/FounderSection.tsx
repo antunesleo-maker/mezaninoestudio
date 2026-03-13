@@ -9,7 +9,7 @@ const FounderSection = () => (
         <img
           src={founderPhoto}
           alt="Leonardo Antunes — Fundador do Mezanino Estúdio Criativo"
-          className="w-full h-[50vh] md:h-[70vh] object-cover object-top"
+          className="w-full h-[50vh] md:h-[70vh] object-cover object-center grayscale"
         />
       </div>
     </Reveal>
