@@ -64,7 +64,7 @@ const ContactSection = () => {
                     { key: "organizacao" as const, label: "Organização", type: "text", required: false },
                   ].map((field) => (
                     <div key={field.key}>
-                      <label className="block text-xs uppercase tracking-[0.2em] text-[hsl(var(--light-muted))] mb-3 font-light">
+                      <label className="block text-xs uppercase tracking-[0.2em] text-muted-foreground mb-3 font-light">
                         {field.label}
                       </label>
                       <input
