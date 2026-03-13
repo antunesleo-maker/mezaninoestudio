@@ -87,7 +87,7 @@ const ContactSection = () => {
                       onChange={(e) => setForm({ ...form, mensagem: e.target.value })}
                       rows={4}
                       maxLength={2000}
-                      className="w-full bg-transparent border-b border-[hsl(var(--light-border))] py-3 text-[hsl(var(--light-fg))] font-light focus:outline-none focus:border-[hsl(var(--light-fg))] transition-colors duration-500 resize-none"
+                      className="w-full bg-transparent border-b border-border py-3 text-foreground font-light focus:outline-none focus:border-foreground transition-colors duration-500 resize-none"
                     />
                   </div>
                   <button
