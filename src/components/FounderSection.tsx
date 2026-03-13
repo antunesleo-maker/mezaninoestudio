@@ -18,14 +18,15 @@ const FounderSection = () => (
         {/* Text right */}
         <div>
           <Reveal>
-            <h2 className="heading-section mb-8">
+            <h2 className="heading-section mb-2">
               Leonardo Antunes
             </h2>
+            <p className="text-sm uppercase tracking-widest text-muted-foreground font-light mb-8">Fundador</p>
           </Reveal>
           <div className="space-y-6">
             <Reveal delay={100}>
               <p className="body-editorial">
-                Leonardo Antunes atua na concepção e condução de projetos estratégicos na interface entre comunicação, planejamento criativo e ambientes digitais.
+                Atua na concepção e condução de projetos estratégicos na interface entre comunicação, planejamento criativo e ambientes digitais.
               </p>
             </Reveal>
             <Reveal delay={180}>
