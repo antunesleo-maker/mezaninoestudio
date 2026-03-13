@@ -64,8 +64,7 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        heading: ["Instrument Serif", "Georgia", "serif"],
-        body: ["Space Grotesk", "system-ui", "sans-serif"],
+        main: ["Outfit", "system-ui", "sans-serif"],
       },
       keyframes: {
         "accordion-down": {
