@@ -15,9 +15,6 @@ const AboutSection = () =>
         <Reveal delay={200}>
           <div className="space-y-6">
             <p className="body-editorial">
-              Mezanino Estúdio Criativo atua no desenvolvimento de pensamento estratégico, planejamento criativo e articulação de projetos em diferentes contextos institucionais.
-            </p>
-            <p className="body-editorial">
               Seu trabalho se concentra em estruturar ideias, organizar processos e desenvolver iniciativas capazes de alcançar consistência institucional, clareza narrativa e continuidade.
             </p>
           </div>
