@@ -18,9 +18,6 @@ const AboutSection = () =>
               Mezanino Estúdio Criativo atua no desenvolvimento de pensamento estratégico, planejamento criativo e articulação de projetos em diferentes contextos institucionais.
             </p>
             <p className="body-editorial">
-              A plataforma surge da experiência acumulada em produção de projetos, curadoria, comunicação institucional e gestão de equipes, conectando diferentes campos de atuação.
-            </p>
-            <p className="body-editorial">
               Seu trabalho se concentra em estruturar ideias, organizar processos e desenvolver iniciativas capazes de alcançar consistência institucional, clareza narrativa e continuidade.
             </p>
           </div>
