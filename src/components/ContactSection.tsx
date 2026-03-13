@@ -31,7 +31,7 @@ const ContactSection = () => {
               <div className="space-y-6">
                 <a
                   href="mailto:mezaninoestudio@gmail.com"
-                  className="flex items-center gap-3 text-[hsl(var(--light-muted))] hover:text-[hsl(var(--light-fg))] transition-colors duration-300 text-base font-light"
+                  className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors duration-300 text-base font-light"
                 >
                   <Mail size={18} strokeWidth={1.5} />
                   mezaninoestudio@gmail.com
