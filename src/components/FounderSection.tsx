@@ -18,9 +18,10 @@ const FounderSection = () => (
         {/* Text right */}
         <div>
           <Reveal>
-            <h2 className="heading-section mb-8">
+            <h2 className="heading-section mb-2">
               Leonardo Antunes
             </h2>
+            <p className="text-sm uppercase tracking-widest text-muted-foreground font-light mb-8">Fundador</p>
           </Reveal>
           <div className="space-y-6">
             <Reveal delay={100}>
