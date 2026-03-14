@@ -2,8 +2,8 @@ import Reveal from "./Reveal";
 
 const services = [
   {
-    title: "Planejamento Estratégico",
-    description: "Desenvolvimento de estratégias para projetos institucionais, culturais e digitais.",
+    title: "Estratégia",
+    description: "Desenvolvimento de estratégias para projetos institucionais, culturais, políticos e digitais.",
   },
   {
     title: "Planejamento Criativo",
@@ -11,11 +11,11 @@ const services = [
   },
   {
     title: "Articulação de Projetos",
-    description: "Concepção e organização de iniciativas em ambientes institucionais e culturais.",
+    description: "Concepção e organização de iniciativas em ambientes institucionais, políticos e culturais.",
   },
   {
     title: "Curadoria",
-    description: "Participação em processos de seleção, curadoria e análise de projetos.",
+    description: "Participação em processos de seleção, curadoria de eventos e análise de projetos.",
   },
   {
     title: "Comunicação Institucional",
