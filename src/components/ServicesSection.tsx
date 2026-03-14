@@ -14,7 +14,7 @@ const services = [
     description: "Concepção e organização de iniciativas em ambientes institucionais e culturais.",
   },
   {
-    title: "Curadoria e Avaliação",
+    title: "Curadoria",
     description: "Participação em processos de seleção, curadoria e análise de projetos.",
   },
   {
