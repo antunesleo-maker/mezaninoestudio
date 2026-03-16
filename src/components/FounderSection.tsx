@@ -5,7 +5,7 @@ import { Linkedin } from "lucide-react";
 const FounderSection = () => (
   <section id="fundador" className="section-light">
     <div className="container-editorial py-24 md:py-32">
-      <div className="grid md:grid-cols-2 gap-12 md:gap-24 items-start">
+      <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start">
         {/* Photo left */}
         <Reveal>
           <img
@@ -50,7 +50,7 @@ const FounderSection = () => (
                 href="https://www.linkedin.com/in/antunesleo"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-2 text-muted-foreground hover:text-foreground transition-colors"
+                className="inline-block mt-2 text-muted-foreground hover:text-black transition-colors"
                 aria-label="LinkedIn de Leonardo Antunes"
               >
                 <Linkedin size={18} strokeWidth={1.5} />

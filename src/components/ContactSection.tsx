@@ -98,7 +98,7 @@ const ContactSection = () => {
                       required
                       value={form.mensagem}
                       onChange={(e) => setForm({ ...form, mensagem: e.target.value })}
-                      rows={4}
+                      rows={2}
                       maxLength={2000}
                       className="w-full bg-transparent border-b border-border py-3 text-foreground font-light focus:outline-none focus:border-foreground transition-colors duration-500 resize-none"
                     />

@@ -39,7 +39,7 @@ const ServicesSection = () => (
               <h3 className="text-lg md:text-xl font-medium text-foreground">
                 {service.title}
               </h3>
-              <p className="text-sm md:text-base font-light text-muted-foreground max-w-md">
+              <p className="text-base md:text-lg font-light text-muted-foreground max-w-md">
                 {service.description}
               </p>
             </div>
