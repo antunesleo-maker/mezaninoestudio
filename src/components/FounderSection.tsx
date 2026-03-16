@@ -1,5 +1,6 @@
 import founderPhoto from "@/assets/leonardo-antunes.jpeg";
 import Reveal from "./Reveal";
+import { Linkedin } from "lucide-react";
 
 const FounderSection = () => (
   <section id="fundador" className="section-light">
@@ -10,7 +11,7 @@ const FounderSection = () => (
           <img
             src={founderPhoto}
             alt="Leonardo Antunes — Fundador do Mezanino Estúdio Criativo"
-            className="w-full h-auto object-cover object-center"
+            className="w-[70%] h-auto object-cover object-center"
             style={{ filter: "grayscale(100%)" }}
           />
         </Reveal>
@@ -43,6 +44,17 @@ const FounderSection = () => (
               <p className="body-editorial">
                 No Mezanino Estúdio Criativo, concentra sua atuação no desenvolvimento de pensamento estratégico, planejamento de iniciativas e articulação de projetos em diferentes contextos institucionais.
               </p>
+            </Reveal>
+            <Reveal delay={420}>
+              <a
+                href="https://www.linkedin.com/in/antunesleo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-2 text-muted-foreground hover:text-foreground transition-colors"
+                aria-label="LinkedIn de Leonardo Antunes"
+              >
+                <Linkedin size={18} strokeWidth={1.5} />
+              </a>
             </Reveal>
           </div>
         </div>
