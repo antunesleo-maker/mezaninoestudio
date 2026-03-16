@@ -50,7 +50,7 @@ const FounderSection = () => (
                 href="https://www.linkedin.com/in/antunesleo"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-2 text-muted-foreground hover:text-foreground transition-colors"
+                className="inline-block mt-2 text-muted-foreground hover:text-black transition-colors"
                 aria-label="LinkedIn de Leonardo Antunes"
               >
                 <Linkedin size={18} strokeWidth={1.5} />
