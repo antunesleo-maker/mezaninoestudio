@@ -51,13 +51,13 @@ const SiteHeader = () => {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <nav className="md:hidden bg-black/95 backdrop-blur-xl pointer-events-auto mix-blend-normal">
-          <div className="container-editorial py-8 flex flex-col gap-6">
+        <nav className="md:hidden bg-black backdrop-blur-xl pointer-events-auto mix-blend-normal">
+          <div className="container-editorial py-6 flex flex-col gap-3">
             {navItems.map((item) => (
               <button
                 key={item.href}
                 onClick={() => scrollTo(item.href)}
-                className="text-left text-sm font-light text-white/60 hover:text-white transition-colors tracking-[0.15em] uppercase"
+                className="text-left text-sm font-light text-white/60 hover:text-white transition-colors tracking-[0.15em] uppercase bg-background px-4 py-3"
               >
                 {item.label}
               </button>
