@@ -41,7 +41,7 @@ const FounderSection = () =>
             </p>
             </Reveal>
             <Reveal delay={340}>
-              <p className="body-editorial">No Mezanino Estúdio Criativo, desenvolve projetos estratégicos a partir de uma visão que integra método, narrativa e leitura de contexto — orientada para dar consistência a iniciativas em ambientes institucionais, políticos, culturais e digitais.
+              <p className="body-editorial">No Mezanino Estúdio Criativo, desenvolve projetos estratégicos a partir de uma visão que integra método, narrativa e leitura de contexto, orientada para dar consistência a iniciativas em ambientes institucionais, políticos, culturais e digitais.
 
             </p>
             </Reveal>
