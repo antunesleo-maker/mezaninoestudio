@@ -85,7 +85,7 @@ const ContactSection = () => {
                         required={field.required}
                         value={form[field.key]}
                         onChange={(e) => setForm({ ...form, [field.key]: e.target.value })}
-                        className="w-full bg-transparent border-b border-border py-3 text-foreground font-light focus:outline-none focus:border-foreground transition-colors duration-500"
+                        className="w-full bg-transparent border-b border-border py-2.5 text-foreground font-light focus:outline-none focus:border-foreground transition-colors duration-500"
                         maxLength={field.key === "email" ? 255 : 100}
                       />
                     </div>
