@@ -33,7 +33,7 @@ const ContactSection = () => {
     <section id="contato" className="min-h-screen flex flex-col justify-center bg-background text-foreground">
       <div className="container-editorial py-24 md:py-32">
         <Reveal>
-          <h2 className="heading-section text-foreground mb-16 md:mb-24">
+          <h2 className="heading-section text-foreground mb-10 md:mb-14">
             Vamos conversar?
           </h2>
         </Reveal>
@@ -70,7 +70,7 @@ const ContactSection = () => {
                   <p className="body-editorial">Retornaremos em breve.</p>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-8">
+                <form onSubmit={handleSubmit} className="space-y-6">
                   {[
                     { key: "nome" as const, label: "Nome", type: "text", required: true },
                     { key: "email" as const, label: "Email", type: "email", required: true },
@@ -85,7 +85,7 @@ const ContactSection = () => {
                         required={field.required}
                         value={form[field.key]}
                         onChange={(e) => setForm({ ...form, [field.key]: e.target.value })}
-                        className="w-full bg-transparent border-b border-border py-3 text-foreground font-light focus:outline-none focus:border-foreground transition-colors duration-500"
+                        className="w-full bg-transparent border-b border-border py-2.5 text-foreground font-light focus:outline-none focus:border-foreground transition-colors duration-500"
                         maxLength={field.key === "email" ? 255 : 100}
                       />
                     </div>
@@ -100,7 +100,7 @@ const ContactSection = () => {
                       onChange={(e) => setForm({ ...form, mensagem: e.target.value })}
                       rows={2}
                       maxLength={2000}
-                      className="w-full bg-transparent border-b border-border py-3 text-foreground font-light focus:outline-none focus:border-foreground transition-colors duration-500 resize-none"
+                      className="w-full bg-transparent border-b border-border py-2.5 text-foreground font-light focus:outline-none focus:border-foreground transition-colors duration-500 resize-none"
                     />
                   </div>
                   {error && (
