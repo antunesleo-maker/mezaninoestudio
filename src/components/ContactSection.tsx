@@ -33,7 +33,7 @@ const ContactSection = () => {
     <section id="contato" className="min-h-screen flex flex-col justify-center bg-background text-foreground">
       <div className="container-editorial py-24 md:py-32">
         <Reveal>
-          <h2 className="heading-section text-foreground mb-16 md:mb-24">
+          <h2 className="heading-section text-foreground mb-10 md:mb-14">
             Vamos conversar?
           </h2>
         </Reveal>
