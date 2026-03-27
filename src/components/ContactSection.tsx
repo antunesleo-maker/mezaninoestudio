@@ -38,7 +38,7 @@ const ContactSection = () => {
           </h2>
         </Reveal>
 
-        <div className="grid md:grid-cols-2 gap-16 md:gap-24">
+        <div className="grid md:grid-cols-[1fr_2fr] gap-16 md:gap-24">
           <div>
             <Reveal delay={100}>
               <div className="space-y-6">
