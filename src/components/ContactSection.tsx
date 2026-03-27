@@ -70,7 +70,7 @@ const ContactSection = () => {
                   <p className="body-editorial">Retornaremos em breve.</p>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-8">
+                <form onSubmit={handleSubmit} className="space-y-6">
                   {[
                     { key: "nome" as const, label: "Nome", type: "text", required: true },
                     { key: "email" as const, label: "Email", type: "email", required: true },
