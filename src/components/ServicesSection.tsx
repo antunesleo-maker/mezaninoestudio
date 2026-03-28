@@ -10,6 +10,10 @@ const services = [
     description: "Estruturação de conceitos, narrativas e direções criativas para iniciativas e programas.",
   },
   {
+    title: "Governança",
+    description: "Estruturação de processos, priorização de iniciativas e alinhamento com objetivos estratégicos de organizações.",
+  },
+  {
     title: "Articulação de Projetos",
     description: "Concepção e organização de iniciativas em ambientes institucionais, políticos e culturais.",
   },
