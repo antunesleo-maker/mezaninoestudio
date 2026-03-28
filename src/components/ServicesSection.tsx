@@ -11,7 +11,7 @@ const services = [
   },
   {
     title: "Governança",
-    description: "Estruturação de processos, priorização de iniciativas e alinhamento com objetivos estratégicos de organizações.",
+    description: "Coordenação de processos e alinhamento com objetivos estratégicos de organizações.",
   },
   {
     title: "Articulação de Projetos",
