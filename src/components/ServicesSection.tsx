@@ -19,7 +19,7 @@ const services = [
   },
   {
     title: "Comunicação Institucional",
-    description: "Estratégias de posicionamento, narrativa institucional e organização de comunicação.",
+    description: "Estratégias de posicionamento, branding, narrativa institucional e gestão de comunicação.",
   },
 ];
 
