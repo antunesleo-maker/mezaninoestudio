@@ -50,7 +50,7 @@ const SiteHeader = () => {
             {navItems.map((item) => (
               <button
                 key={item.href}
-                onClick={() => scrollTo(item.href)}
+                onClick={() => handleNav(item)}
                 className="text-[11px] font-light text-white/60 hover:text-white transition-colors duration-300 tracking-[0.15em] uppercase"
               >
                 {item.label}
