@@ -39,7 +39,7 @@ const SiteHeader = () => {
       <header className="fixed top-0 left-0 right-0 z-50 mix-blend-difference pointer-events-none">
         <div className="container-editorial flex items-center justify-between h-16 md:h-20 pointer-events-auto">
           <button
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            onClick={() => isHome ? window.scrollTo({ top: 0, behavior: "smooth" }) : navigate("/")}
             className="text-lg md:text-xl font-semibold tracking-tight text-white"
           >
             Mezanino
