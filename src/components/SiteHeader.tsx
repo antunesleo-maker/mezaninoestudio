@@ -1,19 +1,37 @@
 import { useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
 const navItems = [
   { label: "Sobre", href: "#about" },
   { label: "Atuação", href: "#atuacao" },
+  { label: "Ensaios", href: "#ensaios", route: "/ensaios" },
   { label: "Fundador", href: "#fundador" },
   { label: "Contato", href: "#contato" },
 ];
 
 const SiteHeader = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
+  const isHome = location.pathname === "/";
 
-  const scrollTo = (href: string) => {
+  const handleNav = (item: typeof navItems[0]) => {
     setMenuOpen(false);
-    document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
+    if ('route' in item && item.route) {
+      if (isHome) {
+        const el = document.querySelector(item.href);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth" });
+          return;
+        }
+      }
+      navigate(item.route);
+    } else if (isHome) {
+      document.querySelector(item.href)?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      navigate("/" + item.href);
+    }
   };
 
   return (
@@ -21,7 +39,7 @@ const SiteHeader = () => {
       <header className="fixed top-0 left-0 right-0 z-50 mix-blend-difference pointer-events-none">
         <div className="container-editorial flex items-center justify-between h-16 md:h-20 pointer-events-auto">
           <button
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            onClick={() => isHome ? window.scrollTo({ top: 0, behavior: "smooth" }) : navigate("/")}
             className="text-lg md:text-xl font-semibold tracking-tight text-white"
           >
             Mezanino
@@ -32,7 +50,7 @@ const SiteHeader = () => {
             {navItems.map((item) => (
               <button
                 key={item.href}
-                onClick={() => scrollTo(item.href)}
+                onClick={() => handleNav(item)}
                 className="text-[11px] font-light text-white/60 hover:text-white transition-colors duration-300 tracking-[0.15em] uppercase"
               >
                 {item.label}
@@ -59,7 +77,7 @@ const SiteHeader = () => {
               {navItems.map((item) => (
                 <button
                   key={item.href}
-                  onClick={() => scrollTo(item.href)}
+                  onClick={() => handleNav(item)}
                   className="text-left text-sm font-light text-white/80 hover:text-white transition-colors tracking-[0.15em] uppercase bg-[#111] px-4 py-3"
                 >
                   {item.label}
