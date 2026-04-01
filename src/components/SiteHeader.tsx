@@ -77,7 +77,7 @@ const SiteHeader = () => {
               {navItems.map((item) => (
                 <button
                   key={item.href}
-                  onClick={() => scrollTo(item.href)}
+                  onClick={() => handleNav(item)}
                   className="text-left text-sm font-light text-white/80 hover:text-white transition-colors tracking-[0.15em] uppercase bg-[#111] px-4 py-3"
                 >
                   {item.label}
