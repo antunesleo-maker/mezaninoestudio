@@ -12,10 +12,26 @@ const navItems = [
 
 const SiteHeader = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
+  const isHome = location.pathname === "/";
 
-  const scrollTo = (href: string) => {
+  const handleNav = (item: typeof navItems[0]) => {
     setMenuOpen(false);
-    document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
+    if ('route' in item && item.route) {
+      if (isHome) {
+        const el = document.querySelector(item.href);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth" });
+          return;
+        }
+      }
+      navigate(item.route);
+    } else if (isHome) {
+      document.querySelector(item.href)?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      navigate("/" + item.href);
+    }
   };
 
   return (
