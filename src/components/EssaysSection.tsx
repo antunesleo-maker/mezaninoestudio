@@ -9,6 +9,7 @@ interface Essay {
   title: string;
   slug: string;
   excerpt: string;
+  thumbnail_url: string | null;
   published_at: string;
 }
 
@@ -16,9 +17,9 @@ const EssaysSection = () => {
   const { data: essays } = useQuery({
     queryKey: ["essays-home"],
     queryFn: async () => {
-      const { data, error } = await supabase
+      const { data, error } = await (supabase
         .from("essays")
-        .select("id, title, slug, excerpt, published_at")
+        .select("id, title, slug, excerpt, published_at, thumbnail_url") as any)
         .order("published_at", { ascending: false })
         .limit(4);
       if (error) throw error;
@@ -42,30 +43,34 @@ const EssaysSection = () => {
           <h2 className="heading-section mb-8 md:mb-12">Ensaios</h2>
         </Reveal>
 
-        <div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
           {essays.map((essay, i) => (
             <Reveal key={essay.id} delay={i * 80}>
               <Link
                 to={`/ensaios/${essay.slug}`}
-                className="group block py-6 md:py-8 border-t border-[hsl(var(--light-border))]"
+                className="group block"
               >
-                <div className="flex flex-col md:flex-row md:items-baseline gap-2 md:gap-12">
-                  <div className="flex-1">
-                    <h3 className="text-lg md:text-xl font-medium group-hover:opacity-70 transition-opacity duration-300">
-                      {essay.title}
-                    </h3>
-                    <p className="text-sm text-[hsl(var(--light-muted))] mt-1 font-light">
-                      {formatDate(essay.published_at)}
-                    </p>
+                {essay.thumbnail_url && (
+                  <div className="aspect-[16/9] overflow-hidden mb-4">
+                    <img
+                      src={essay.thumbnail_url}
+                      alt={essay.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
                   </div>
-                  <p className="text-base md:text-lg font-light text-[hsl(var(--light-muted))] max-w-md">
-                    {essay.excerpt}
-                  </p>
-                </div>
+                )}
+                <h3 className="text-lg md:text-xl font-medium group-hover:opacity-70 transition-opacity duration-300">
+                  {essay.title}
+                </h3>
+                <p className="text-sm text-[hsl(var(--light-muted))] mt-1 font-light line-clamp-2">
+                  {essay.excerpt}
+                </p>
+                <p className="text-xs text-[hsl(var(--light-muted))] mt-2 font-light tracking-wide">
+                  {formatDate(essay.published_at)}
+                </p>
               </Link>
             </Reveal>
           ))}
-          <div className="border-t border-[hsl(var(--light-border))]" />
         </div>
 
         <Reveal delay={400}>
