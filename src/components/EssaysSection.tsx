@@ -39,10 +39,7 @@ const EssaysSection = () => {
     <section id="ensaios" className="section-light">
       <div className="container-editorial py-24 md:py-32">
         <Reveal>
-          <h2 className="heading-section mb-4">Ensaios</h2>
-          <p className="body-editorial mb-16 md:mb-24 max-w-2xl">
-            Ensaios sobre estratégia, projetos e contexto institucional.
-          </p>
+          <h2 className="heading-section mb-8 md:mb-12">Ensaios</h2>
         </Reveal>
 
         <div>
@@ -52,7 +49,7 @@ const EssaysSection = () => {
                 to={`/ensaios/${essay.slug}`}
                 className="group block py-6 md:py-8 border-t border-[hsl(var(--light-border))]"
               >
-                <div className="flex flex-col md:flex-row md:items-baseline md:justify-between gap-2 md:gap-12">
+                <div className="flex flex-col md:flex-row md:items-baseline gap-2 md:gap-12">
                   <div className="flex-1">
                     <h3 className="text-lg md:text-xl font-medium group-hover:opacity-70 transition-opacity duration-300">
                       {essay.title}
@@ -61,7 +58,7 @@ const EssaysSection = () => {
                       {formatDate(essay.published_at)}
                     </p>
                   </div>
-                  <p className="text-base font-light text-[hsl(var(--light-muted))] max-w-md">
+                  <p className="text-base md:text-lg font-light text-[hsl(var(--light-muted))] max-w-md">
                     {essay.excerpt}
                   </p>
                 </div>
