@@ -20,6 +20,10 @@ interface Essay {
 const EssayDetail = () => {
   const { slug } = useParams<{ slug: string }>();
 
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [slug]);
+
   const { data: essay, isLoading } = useQuery({
     queryKey: ["essay", slug],
     queryFn: async () => {
