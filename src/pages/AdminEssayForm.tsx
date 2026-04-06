@@ -17,6 +17,7 @@ interface EssayForm {
   content: string;
   excerpt: string;
   image_url: string;
+  thumbnail_url: string;
   linkedin_url: string;
   published_at: string;
 }
@@ -26,6 +27,7 @@ const emptyForm: EssayForm = {
   content: "",
   excerpt: "",
   image_url: "",
+  thumbnail_url: "",
   linkedin_url: "",
   published_at: new Date().toISOString().slice(0, 16),
 };
@@ -62,6 +64,7 @@ const AdminEssayForm = () => {
         content: data.content,
         excerpt: data.excerpt,
         image_url: data.image_url || "",
+        thumbnail_url: (data as any).thumbnail_url || "",
         linkedin_url: data.linkedin_url || "",
         published_at: new Date(data.published_at).toISOString().slice(0, 16),
       });
@@ -70,13 +73,13 @@ const AdminEssayForm = () => {
     enabled: isEditing,
   });
 
-  const handleImageUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleImageUpload = async (e: React.ChangeEvent<HTMLInputElement>, field: "image_url" | "thumbnail_url") => {
     const file = e.target.files?.[0];
     if (!file) return;
 
     setUploading(true);
     const ext = file.name.split(".").pop();
-    const fileName = `${Date.now()}.${ext}`;
+    const fileName = `${field === "thumbnail_url" ? "thumb-" : ""}${Date.now()}.${ext}`;
 
     const { error: uploadError } = await supabase.storage
       .from("essay-images")
@@ -92,7 +95,7 @@ const AdminEssayForm = () => {
       .from("essay-images")
       .getPublicUrl(fileName);
 
-    setForm((prev) => ({ ...prev, image_url: urlData.publicUrl }));
+    setForm((prev) => ({ ...prev, [field]: urlData.publicUrl }));
     setUploading(false);
   };
 
@@ -108,10 +111,11 @@ const AdminEssayForm = () => {
       content: form.content.trim(),
       excerpt: form.excerpt.trim(),
       image_url: form.image_url.trim() || null,
+      thumbnail_url: form.thumbnail_url.trim() || null,
       linkedin_url: form.linkedin_url.trim() || null,
       published_at: new Date(form.published_at).toISOString(),
       updated_at: new Date().toISOString(),
-    };
+    } as any;
 
     let result;
     if (isEditing) {
@@ -209,8 +213,52 @@ const AdminEssayForm = () => {
 
           <div>
             <label className="block text-xs uppercase tracking-[0.2em] text-muted-foreground mb-3 font-light">
-              Imagem
+              Imagem de capa (thumbnail)
             </label>
+            <p className="text-xs text-muted-foreground mb-3 font-light">
+              Exibida na listagem de ensaios na Home. Formato horizontal recomendado.
+            </p>
+            {form.thumbnail_url && (
+              <div className="mb-4">
+                <img
+                  src={form.thumbnail_url}
+                  alt="Thumbnail preview"
+                  className="w-48 h-28 object-cover"
+                />
+              </div>
+            )}
+            <input
+              type="file"
+              accept="image/*"
+              onChange={(e) => handleImageUpload(e, "thumbnail_url")}
+              className="text-sm text-muted-foreground font-light"
+            />
+            {uploading && (
+              <p className="text-xs text-muted-foreground mt-2">Enviando...</p>
+            )}
+            <div className="mt-3">
+              <label className="block text-xs text-muted-foreground mb-1 font-light">
+                ou cole a URL:
+              </label>
+              <input
+                type="url"
+                value={form.thumbnail_url}
+                onChange={(e) =>
+                  setForm({ ...form, thumbnail_url: e.target.value })
+                }
+                className={fieldClass}
+                placeholder="https://..."
+              />
+            </div>
+          </div>
+
+          <div>
+            <label className="block text-xs uppercase tracking-[0.2em] text-muted-foreground mb-3 font-light">
+              Imagem interna
+            </label>
+            <p className="text-xs text-muted-foreground mb-3 font-light">
+              Exibida dentro do ensaio, ao lado do texto.
+            </p>
             {form.image_url && (
               <div className="mb-4">
                 <img
@@ -223,7 +271,7 @@ const AdminEssayForm = () => {
             <input
               type="file"
               accept="image/*"
-              onChange={handleImageUpload}
+              onChange={(e) => handleImageUpload(e, "image_url")}
               className="text-sm text-muted-foreground font-light"
             />
             {uploading && (
@@ -231,7 +279,7 @@ const AdminEssayForm = () => {
             )}
             <div className="mt-3">
               <label className="block text-xs text-muted-foreground mb-1 font-light">
-                ou cole a URL da imagem:
+                ou cole a URL:
               </label>
               <input
                 type="url"
