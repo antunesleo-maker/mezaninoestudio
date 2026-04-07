@@ -51,7 +51,7 @@ const EssaysSection = () => {
                 className="group block"
               >
                 {essay.thumbnail_url && (
-                  <div className="aspect-[16/9] overflow-hidden mb-4">
+                  <div className="aspect-[5/2] overflow-hidden mb-4">
                     <img
                       src={essay.thumbnail_url}
                       alt={essay.title}
