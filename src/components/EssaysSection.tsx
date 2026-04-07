@@ -37,7 +37,7 @@ const EssaysSection = () => {
     });
 
   return (
-    <section id="ensaios" className="section-light">
+    <section id="ensaios" style={{ backgroundColor: "#f9f9f9" }}>
       <div className="container-editorial py-24 md:py-32">
         <Reveal>
           <h2 className="heading-section mb-8 md:mb-12">Ensaios</h2>
@@ -51,7 +51,7 @@ const EssaysSection = () => {
                 className="group block"
               >
                 {essay.thumbnail_url && (
-                  <div className="aspect-[5/2] overflow-hidden mb-4">
+                  <div className="aspect-[3/1] overflow-hidden mb-4">
                     <img
                       src={essay.thumbnail_url}
                       alt={essay.title}
@@ -59,7 +59,7 @@ const EssaysSection = () => {
                     />
                   </div>
                 )}
-                <h3 className="text-lg md:text-xl font-medium group-hover:opacity-70 transition-opacity duration-300">
+                <h3 className="text-xl md:text-[1.375rem] font-medium group-hover:opacity-70 transition-opacity duration-300">
                   {essay.title}
                 </h3>
                 <p className="text-sm text-[hsl(var(--light-muted))] mt-1 font-light line-clamp-2">
