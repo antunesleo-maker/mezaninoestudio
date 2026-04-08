@@ -30,7 +30,10 @@ const SiteHeader = () => {
     } else if (isHome) {
       document.querySelector(item.href)?.scrollIntoView({ behavior: "smooth" });
     } else {
-      navigate("/" + item.href);
+      navigate("/");
+      setTimeout(() => {
+        document.querySelector(item.href)?.scrollIntoView({ behavior: "smooth" });
+      }, 300);
     }
   };
 
