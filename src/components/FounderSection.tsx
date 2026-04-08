@@ -3,7 +3,7 @@ import Reveal from "./Reveal";
 import { Linkedin } from "lucide-react";
 
 const FounderSection = () =>
-<section id="fundador" className="bg-background text-foreground">
+<section id="fundador" className="section-light">
     <div className="container-editorial py-24 md:py-32">
       <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-start">
         {/* Photo left */}
