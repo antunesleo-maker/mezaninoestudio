@@ -37,7 +37,7 @@ const EssaysSection = () => {
     });
 
   return (
-    <section id="ensaios" style={{ backgroundColor: "#f9f9f9" }}>
+    <section id="ensaios" style={{ backgroundColor: "#e6e6e6" }}>
       <div className="container-editorial py-24 md:py-32">
         <Reveal>
           <h2 className="heading-section mb-8 md:mb-12" style={{ color: "hsl(var(--light-fg))" }}>Ensaios</h2>
@@ -78,6 +78,7 @@ const EssaysSection = () => {
             <Link
               to="/ensaios"
               className="inline-flex items-center gap-2 text-sm uppercase tracking-[0.2em] font-medium hover:opacity-70 transition-opacity duration-300"
+              style={{ color: "hsl(var(--light-muted))" }}
             >
               Ver todos os ensaios
               <ArrowRight size={16} strokeWidth={1.5} />
