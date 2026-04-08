@@ -40,7 +40,7 @@ const EssaysSection = () => {
     <section id="ensaios" style={{ backgroundColor: "#f9f9f9" }}>
       <div className="container-editorial py-24 md:py-32">
         <Reveal>
-          <h2 className="heading-section mb-8 md:mb-12">Ensaios</h2>
+          <h2 className="heading-section mb-8 md:mb-12" style={{ color: "hsl(0 0% 0%)" }}>Ensaios</h2>
         </Reveal>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
@@ -59,7 +59,7 @@ const EssaysSection = () => {
                     />
                   </div>
                 )}
-                <h3 className="text-xl md:text-[1.375rem] font-medium group-hover:opacity-70 transition-opacity duration-300">
+                <h3 className="text-xl md:text-[1.375rem] font-medium group-hover:opacity-70 transition-opacity duration-300" style={{ color: "hsl(0 0% 0%)" }}>
                   {essay.title}
                 </h3>
                 <p className="text-sm text-[hsl(var(--light-muted))] mt-1 font-light line-clamp-2">
