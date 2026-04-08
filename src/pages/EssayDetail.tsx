@@ -78,7 +78,7 @@ const EssayDetail = () => {
 
               <Reveal delay={100}>
                 <header className="mb-12 md:mb-16">
-                  <h1 className="heading-display mb-4 text-[20pt] sm:text-[26pt] md:text-[32pt] lg:text-[38pt]">{essay.title}</h1>
+                  <h1 className="heading-display mb-4 text-[15pt] sm:text-[21pt] md:text-[27pt] lg:text-[33pt]">{essay.title}</h1>
                   <p className="text-sm text-[hsl(var(--light-muted))] font-light tracking-wide">
                     {formatDate(essay.published_at)}
                   </p>
