@@ -40,7 +40,7 @@ const Essays = () => {
         <div className="container-editorial pt-12 md:pt-16 pb-24 md:pb-32">
           <Reveal>
             <h1 className="heading-display mb-4">Ensaios</h1>
-            <p className="body-editorial mb-16 md:mb-24 max-w-2xl">
+            <p className="body-editorial mb-10 md:mb-14 max-w-2xl">
               Ensaios sobre estratégia, projetos e contexto institucional.
             </p>
           </Reveal>
