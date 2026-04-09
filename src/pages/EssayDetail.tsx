@@ -86,7 +86,7 @@ const EssayDetail = () => {
               </Reveal>
 
               <Reveal delay={200}>
-                <div className="max-w-3xl">
+                <div>
                   {essay.image_url ? (
                     <div className="md:float-right md:ml-8 md:mb-6 md:w-[35%] mb-8">
                       <img
