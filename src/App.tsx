@@ -10,6 +10,7 @@ import EssayDetail from "./pages/EssayDetail.tsx";
 import AdminLogin from "./pages/AdminLogin.tsx";
 import AdminEssays from "./pages/AdminEssays.tsx";
 import AdminEssayForm from "./pages/AdminEssayForm.tsx";
+import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -19,6 +20,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/ensaios" element={<Essays />} />
