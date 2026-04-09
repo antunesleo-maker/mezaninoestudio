@@ -50,7 +50,7 @@ const EssayDetail = () => {
     <>
       <SiteHeader />
       <main className="section-light min-h-screen pt-20 md:pt-24">
-        <div className="container-editorial pt-12 md:pt-16 pb-24 md:pb-32">
+        <div className="max-w-3xl mx-auto px-6 md:px-8 pt-12 md:pt-16 pb-24 md:pb-32">
           {isLoading ? (
             <p className="body-editorial">Carregando...</p>
           ) : !essay ? (
@@ -86,7 +86,7 @@ const EssayDetail = () => {
               </Reveal>
 
               <Reveal delay={200}>
-                <div className="max-w-3xl">
+                <div>
                   {essay.image_url ? (
                     <div className="md:float-right md:ml-8 md:mb-6 md:w-[35%] mb-8">
                       <img
