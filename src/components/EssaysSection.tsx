@@ -51,12 +51,13 @@ const EssaysSection = () => {
                 className="group block"
               >
                 {essay.thumbnail_url && (
-                  <div className="aspect-[3/1] overflow-hidden mb-4">
+                  <div className="aspect-[3/1] overflow-hidden mb-4 relative">
                     <img
                       src={essay.thumbnail_url}
                       alt={essay.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
+                    <div className="absolute inset-0 bg-[#60bfc2] opacity-0 group-hover:opacity-40 mix-blend-color transition-opacity duration-500 pointer-events-none" />
                   </div>
                 )}
                 <h3 className="text-xl md:text-[1.375rem] font-medium group-hover:opacity-70 transition-opacity duration-300" style={{ color: "hsl(var(--light-fg))" }}>
