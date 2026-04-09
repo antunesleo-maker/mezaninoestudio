@@ -10,6 +10,7 @@ import EssayDetail from "./pages/EssayDetail.tsx";
 import AdminLogin from "./pages/AdminLogin.tsx";
 import AdminEssays from "./pages/AdminEssays.tsx";
 import AdminEssayForm from "./pages/AdminEssayForm.tsx";
+import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
