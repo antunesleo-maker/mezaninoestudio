@@ -37,7 +37,7 @@ const Essays = () => {
     <>
       <SiteHeader />
       <main className="section-light min-h-screen pt-20 md:pt-24">
-        <div className="container-editorial py-24 md:py-32">
+        <div className="container-editorial pt-12 md:pt-16 pb-24 md:pb-32">
           <Reveal>
             <h1 className="heading-display mb-4">Ensaios</h1>
             <p className="body-editorial mb-16 md:mb-24 max-w-2xl">
