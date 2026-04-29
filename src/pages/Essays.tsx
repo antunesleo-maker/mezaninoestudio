@@ -20,6 +20,7 @@ const Essays = () => {
       const { data, error } = await supabase
         .from("essays")
         .select("id, title, slug, excerpt, published_at")
+        .order("display_order", { ascending: true })
         .order("published_at", { ascending: false });
       if (error) throw error;
       return data as Essay[];
