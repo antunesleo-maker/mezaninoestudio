@@ -20,6 +20,7 @@ const EssaysSection = () => {
       const { data, error } = await (supabase
         .from("essays")
         .select("id, title, slug, excerpt, published_at, thumbnail_url") as any)
+        .order("display_order", { ascending: true })
         .order("published_at", { ascending: false })
         .limit(4);
       if (error) throw error;
