@@ -1,4 +1,4 @@
-import { createClient } from '@supabase/supabase-backend-js';
+import { createClient } from '@supabase/supabase-js';
 
 // Puxa as variáveis de ambiente que configuramos na Vercel
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
