@@ -29,7 +29,7 @@ const ContactSection = () => {
       setSubmitted(true);
     } catch (err: any) {
       console.error("Erro ao enviar:", err);
-      setError("Erro ao enviar mensagem. Tente novamente.");
+      setError("Erro ao enviar mensagem. Tente novamente. Obrigado.");
     } finally {
       setSending(false);
     }
