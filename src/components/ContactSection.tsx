@@ -15,9 +15,15 @@ const ContactSection = () => {
     setError("");
 
     try {
-      const { data, error: fnError } = await supabase.functions.invoke("send-contact", {
-        body: form,
-      });
+      const { data, error: fnError } = await supabase
+        .from("messages")
+        .insert([
+          {
+            name: form.nome,
+            email: form.email,
+            message: `${form.organizacao ? `[Organização: ${form.organizacao}] ` : ""}${form.mensagem}`
+          }
+        ]);
 
       if (fnError) throw fnError;
       setSubmitted(true);
@@ -28,6 +34,7 @@ const ContactSection = () => {
       setSending(false);
     }
   };
+
 
   return (
     <section id="contato" className="min-h-screen flex flex-col justify-center bg-background text-foreground">
