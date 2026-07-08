@@ -10,6 +10,7 @@ import EssayDetail from "./pages/EssayDetail.tsx";
 import AdminLogin from "./pages/AdminLogin.tsx";
 import AdminEssays from "./pages/AdminEssays.tsx";
 import AdminEssayForm from "./pages/AdminEssayForm.tsx";
+import ComunicacaoPolitica from "./pages/ComunicacaoPolitica.tsx";
 import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/admin" element={<AdminLogin />} />
           <Route path="/admin/ensaios" element={<AdminEssays />} />
           <Route path="/admin/ensaios/:id" element={<AdminEssayForm />} />
+          <Route path="/comunicacao-politica" element={<ComunicacaoPolitica />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
