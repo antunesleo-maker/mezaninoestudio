@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { MessageCircle, Mail, Menu, X, Compass, Share2, Printer, Camera, ArrowDown } from "lucide-react";
 import Reveal from "@/components/Reveal";
-import heroBg from "@/assets/cabeca-site-politica.png.asset.json";
+import heroBg from "@/assets/cabeca-site-ideias.png.asset.json";
 import founderPhoto from "@/assets/leonardo-antunes.jpeg";
 
 const WHATSAPP_URL = "https://wa.me/5581991087214";
