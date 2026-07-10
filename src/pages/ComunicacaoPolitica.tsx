@@ -44,7 +44,7 @@ const ComunicacaoPolitica = () => {
 
   const anchors = [
     { label: "Serviços", href: "#servicos" },
-    { label: "Sobre", href: "#sobre" },
+    { label: "Experiência", href: "#experiencia" },
     { label: "Contato", href: "#contato" },
   ];
 
