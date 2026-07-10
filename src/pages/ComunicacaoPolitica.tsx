@@ -242,19 +242,19 @@ const ComunicacaoPolitica = () => {
                   <h2 className="heading-section mb-8">Leonardo Antunes</h2>
                 </Reveal>
                 <div className="space-y-6">
-                  <Reveal delay={100}>
+                <Reveal delay={100}>
                     <p className="body-editorial">
-                      Leonardo Antunes atua no desenvolvimento de estratégias de comunicação para campanhas eleitorais, mandatos e projetos institucionais.
+                      Ao longo da carreira, atuou em campanhas eleitorais, mandatos e projetos institucionais, desenvolvendo estratégias de comunicação, planejamento, produção de conteúdo e coordenação de equipes.
                     </p>
                   </Reveal>
                   <Reveal delay={200}>
                     <p className="body-editorial">
-                      Designer formado pela UFPE, iniciou sua trajetória em web design e arquitetura de informação. Ao longo da carreira, coordenou projetos nas áreas de comunicação institucional, cultura e política, integrando planejamento estratégico, produção de conteúdo, direção de comunicação, produção gráfica e coordenação de equipes.
+                      Sua experiência reúne atuação em comunicação política, direção de conteúdo, produção para redes sociais, produção gráfica e cobertura audiovisual, oferecendo uma visão integrada da comunicação de campanha — do planejamento estratégico à execução.
                     </p>
                   </Reveal>
                   <Reveal delay={300}>
                     <p className="body-editorial">
-                      Sua atuação combina estratégia, criatividade e capacidade de execução para construir campanhas consistentes e comunicação eficiente.
+                      Designer formado pela UFPE, iniciou sua trajetória em web design e arquitetura da informação. Essa base contribuiu para uma abordagem orientada por método, narrativa, experiência do público e organização da comunicação.
                     </p>
                   </Reveal>
                 </div>
