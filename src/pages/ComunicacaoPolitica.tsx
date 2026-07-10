@@ -44,7 +44,7 @@ const ComunicacaoPolitica = () => {
 
   const anchors = [
     { label: "Serviços", href: "#servicos" },
-    { label: "Sobre", href: "#sobre" },
+    { label: "Experiência", href: "#experiencia" },
     { label: "Contato", href: "#contato" },
   ];
 
@@ -221,8 +221,8 @@ const ComunicacaoPolitica = () => {
           </div>
         </section>
 
-        {/* SOBRE */}
-        <section id="sobre" className="section-light">
+        {/* EXPERIÊNCIA */}
+        <section id="experiencia" className="section-light">
           <div className="container-editorial py-24 md:py-32">
             <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start">
               <Reveal>
@@ -237,7 +237,7 @@ const ComunicacaoPolitica = () => {
               <div>
                 <Reveal>
                   <p className="text-sm uppercase tracking-widest text-muted-foreground font-light mb-4">
-                    Sobre
+                    Experiência
                   </p>
                   <h2 className="heading-section mb-8">Leonardo Antunes</h2>
                 </Reveal>
