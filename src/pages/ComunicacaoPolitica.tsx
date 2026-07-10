@@ -129,22 +129,29 @@ const ComunicacaoPolitica = () => {
           className="section-fullscreen relative pt-24 md:pt-28 bg-cover bg-center"
           style={{ backgroundImage: `url(${heroBg.url})` }}
         >
-          <div className="absolute inset-0 bg-black/50" />
-
           <div className="container-editorial relative z-10 flex-1 flex items-center py-16 md:py-24">
             <div className="max-w-xl">
               <Reveal>
-                <p className="text-[11px] uppercase tracking-[0.25em] text-white/70 mb-8 font-light">
+                <p
+                  className="text-[11px] uppercase tracking-[0.25em] text-white mb-8 font-light"
+                  style={{ textShadow: "0 2px 8px rgba(0,0,0,0.6)" }}
+                >
                   Comunicação Política
                 </p>
               </Reveal>
               <Reveal delay={150}>
-                <h1 className="heading-display text-white mb-8">
+                <h1
+                  className="heading-display text-white mb-8"
+                  style={{ textShadow: "0 3px 16px rgba(0,0,0,0.7)" }}
+                >
                   Comunicação estratégica para campanhas políticas.
                 </h1>
               </Reveal>
               <Reveal delay={300}>
-                <p className="body-editorial text-white/90 mb-10 max-w-lg">
+                <p
+                  className="body-editorial text-white mb-10 max-w-lg"
+                  style={{ textShadow: "0 2px 10px rgba(0,0,0,0.6)" }}
+                >
                   Planejamento, conteúdo e produção para candidaturas, mandatos e projetos políticos.
                 </p>
               </Reveal>
