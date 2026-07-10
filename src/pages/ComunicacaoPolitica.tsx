@@ -129,7 +129,7 @@ const ComunicacaoPolitica = () => {
           className="section-fullscreen relative pt-24 md:pt-28 bg-cover bg-center"
           style={{ backgroundImage: `url(${heroBg.url})` }}
         >
-          <div className="container-editorial relative z-10 flex-1 flex items-center py-16 md:py-24">
+          <div className="w-full px-6 md:px-12 lg:px-16 relative z-10 flex-1 flex items-center justify-start py-16 md:py-24">
             <div className="max-w-xl">
               <Reveal>
                 <p
