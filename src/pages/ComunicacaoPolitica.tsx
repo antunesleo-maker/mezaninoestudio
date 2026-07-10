@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { MessageCircle, Mail, Menu, X, Compass, Share2, Printer, Camera, ArrowDown } from "lucide-react";
 import Reveal from "@/components/Reveal";
-import heroBg from "@/assets/cabeca-site-politica.png.asset.json";
+import heroBg from "@/assets/cabeca-site-ideias.png.asset.json";
 import founderPhoto from "@/assets/leonardo-antunes.jpeg";
 
 const WHATSAPP_URL = "https://wa.me/5581991087214";
@@ -129,7 +129,7 @@ const ComunicacaoPolitica = () => {
           className="section-fullscreen relative pt-24 md:pt-28 bg-cover bg-center"
           style={{ backgroundImage: `url(${heroBg.url})` }}
         >
-          <div className="container-editorial relative z-10 flex-1 flex items-center py-16 md:py-24">
+          <div className="w-full px-6 md:px-12 lg:px-16 relative z-10 flex-1 flex items-center justify-start py-16 md:py-24">
             <div className="max-w-xl">
               <Reveal>
                 <p
