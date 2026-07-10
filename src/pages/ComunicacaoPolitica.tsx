@@ -125,55 +125,46 @@ const ComunicacaoPolitica = () => {
 
       <main id="top">
         {/* HERO */}
-        <section className="section-fullscreen bg-background pt-24 md:pt-28">
-          <div className="container-editorial flex-1 flex items-center py-16 md:py-24">
-            <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center w-full">
-              <div className="max-w-xl">
-                <Reveal>
-                  <p className="text-[11px] uppercase tracking-[0.25em] text-muted-foreground mb-8 font-light">
-                    Comunicação Política
-                  </p>
-                </Reveal>
-                <Reveal delay={150}>
-                  <h1 className="heading-display text-foreground mb-8">
-                    Comunicação estratégica para campanhas políticas.
-                  </h1>
-                </Reveal>
-                <Reveal delay={300}>
-                  <p className="body-editorial mb-10 max-w-lg">
-                    Planejamento, conteúdo e produção para candidaturas, mandatos e projetos políticos.
-                  </p>
-                </Reveal>
-                <Reveal delay={450}>
-                  <a
-                    href={WHATSAPP_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-3 text-sm uppercase tracking-[0.2em] font-medium text-background bg-foreground px-8 py-4 hover:opacity-80 transition-opacity duration-300"
-                  >
-                    <MessageCircle size={16} strokeWidth={1.5} />
-                    Vamos conversar
-                  </a>
-                </Reveal>
-              </div>
+        <section
+          className="section-fullscreen relative pt-24 md:pt-28 bg-cover bg-center"
+          style={{ backgroundImage: `url(${heroBg.url})` }}
+        >
+          <div className="absolute inset-0 bg-black/50" />
 
-              <Reveal delay={200}>
-                <div className="w-full aspect-[4/5] overflow-hidden">
-                  <img
-                    src={heroImage}
-                    alt="Composição editorial sobre comunicação política contemporânea"
-                    width={1600}
-                    height={1200}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+          <div className="container-editorial relative z-10 flex-1 flex items-center py-16 md:py-24">
+            <div className="max-w-xl">
+              <Reveal>
+                <p className="text-[11px] uppercase tracking-[0.25em] text-white/70 mb-8 font-light">
+                  Comunicação Política
+                </p>
+              </Reveal>
+              <Reveal delay={150}>
+                <h1 className="heading-display text-white mb-8">
+                  Comunicação estratégica para campanhas políticas.
+                </h1>
+              </Reveal>
+              <Reveal delay={300}>
+                <p className="body-editorial text-white/90 mb-10 max-w-lg">
+                  Planejamento, conteúdo e produção para candidaturas, mandatos e projetos políticos.
+                </p>
+              </Reveal>
+              <Reveal delay={450}>
+                <a
+                  href={WHATSAPP_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-3 text-sm uppercase tracking-[0.2em] font-medium text-background bg-foreground px-8 py-4 hover:opacity-80 transition-opacity duration-300"
+                >
+                  <MessageCircle size={16} strokeWidth={1.5} />
+                  Vamos conversar
+                </a>
               </Reveal>
             </div>
           </div>
 
           <button
             onClick={() => document.querySelector("#servicos")?.scrollIntoView({ behavior: "smooth" })}
-            className="absolute bottom-8 right-8 md:bottom-12 md:right-16 w-12 h-12 rounded-full bg-foreground/10 hover:bg-foreground/20 flex items-center justify-center text-foreground transition-colors duration-300 animate-scroll-bounce"
+            className="absolute bottom-8 right-8 md:bottom-12 md:right-16 z-10 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-colors duration-300 animate-scroll-bounce"
             aria-label="Ver serviços"
           >
             <ArrowDown size={20} strokeWidth={1.5} />
