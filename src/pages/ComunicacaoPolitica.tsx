@@ -132,12 +132,12 @@ const ComunicacaoPolitica = () => {
           {/* Desktop background */}
           <div
             className="hidden md:block absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url('/hero-politica-desktop.jpg')` }}
+            style={{ backgroundImage: `url('/hero-politica-desktop.png')` }}
           />
           {/* Mobile background */}
           <div
             className="block md:hidden absolute inset-0 bg-contain bg-bottom bg-no-repeat"
-            style={{ backgroundImage: `url('/hero-politica-mobile.jpg')` }}
+            style={{ backgroundImage: `url('/hero-politica-mobile.png')` }}
           />
 
           <div className="w-full px-6 md:px-12 lg:px-16 relative z-10 flex-1 flex items-start justify-start py-12 md:py-24 md:items-center md:justify-start">
