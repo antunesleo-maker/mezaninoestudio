@@ -244,17 +244,17 @@ const ComunicacaoPolitica = () => {
                 <div className="space-y-6">
                 <Reveal delay={100}>
                     <p className="body-editorial">
-                      Ao longo da carreira, atuou em campanhas eleitorais, mandatos e projetos institucionais, desenvolvendo estratégias de comunicação, planejamento, produção de conteúdo e coordenação de equipes.
+                      Ao longo da carreira, atuou em campanhas eleitorais, mandatos e projetos institucionais, desenvolvendo estratégias de comunicação, planejamento e coordenação de equipes.
                     </p>
                   </Reveal>
                   <Reveal delay={200}>
                     <p className="body-editorial">
-                      Sua experiência reúne atuação em comunicação política, direção de conteúdo, produção para redes sociais, produção gráfica e cobertura audiovisual, oferecendo uma visão integrada da comunicação de campanha — do planejamento estratégico à execução.
+                      Passou por instituições como o Jornal do Commercio, Governo de Pernambuco, Assembleia Legislativa de Pernambuco e Câmara Municipal do Recife, experiência que consolidou uma visão integrada da comunicação política, do planejamento à produção de conteúdo, cobertura audiovisual e materiais gráficos.
                     </p>
                   </Reveal>
                   <Reveal delay={300}>
                     <p className="body-editorial">
-                      Designer formado pela UFPE, iniciou sua trajetória em web design e arquitetura da informação. Essa base contribuiu para uma abordagem orientada por método, narrativa, experiência do público e organização da comunicação.
+                      Designer formado pela UFPE, sua origem em web design e arquitetura da informação orienta até hoje sua leitura sobre narrativa, sistemas digitais e comportamento de público.
                     </p>
                   </Reveal>
                 </div>
