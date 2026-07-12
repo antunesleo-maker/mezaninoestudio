@@ -171,7 +171,7 @@ const ComunicacaoPolitica = () => {
                   href={WHATSAPP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-3 text-sm uppercase tracking-[0.2em] font-medium text-background bg-foreground px-8 py-4 hover:opacity-80 transition-opacity duration-300"
+                  className="inline-flex items-center gap-3 text-sm uppercase tracking-[0.2em] font-medium text-background bg-foreground px-6 py-3 md:px-8 md:py-4 hover:opacity-80 transition-opacity duration-300"
                 >
                   <MessageCircle size={16} strokeWidth={1.5} />
                   Vamos conversar
