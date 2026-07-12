@@ -160,7 +160,7 @@ const ComunicacaoPolitica = () => {
               </Reveal>
               <Reveal delay={300}>
                 <p
-                  className="body-editorial !text-white mb-2 md:mb-10 max-w-lg text-xs md:text-base"
+                  className="body-editorial !text-white mb-2 md:mb-10 max-w-lg text-xs md:text-base !leading-[1.4]"
                   style={{ textShadow: "0 2px 10px rgba(0,0,0,0.6)" }}
                 >
                   Planejamento, conteúdo e produção para candidaturas, mandatos e projetos políticos.
