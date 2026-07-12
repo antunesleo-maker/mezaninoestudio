@@ -127,7 +127,7 @@ const ComunicacaoPolitica = () => {
       <main id="top">
         {/* HERO */}
         <section
-          className="relative min-h-[130vh] md:min-h-screen flex flex-col justify-start md:justify-center pt-24 md:pt-28"
+          className="relative aspect-[9/16] md:aspect-auto md:min-h-screen flex flex-col justify-start md:justify-center pt-16 md:pt-28"
         >
           {/* Desktop background */}
           <div
@@ -136,11 +136,11 @@ const ComunicacaoPolitica = () => {
           />
           {/* Mobile background */}
           <div
-            className="block md:hidden absolute inset-0 bg-contain bg-bottom bg-no-repeat"
+            className="block md:hidden absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{ backgroundImage: `url('/hero-politica-mobile.png')` }}
           />
 
-          <div className="w-full px-6 md:px-12 lg:px-16 relative z-10 flex-1 flex items-start justify-start py-12 md:py-24 md:items-center md:justify-start">
+          <div className="w-full px-6 md:px-12 lg:px-16 relative z-10 flex-1 flex items-start justify-start py-8 md:py-24 md:items-center md:justify-start">
             <div className="max-w-xl">
               <Reveal>
                 <p
