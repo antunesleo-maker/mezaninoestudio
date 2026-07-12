@@ -127,7 +127,7 @@ const ComunicacaoPolitica = () => {
       <main id="top">
         {/* HERO */}
         <section
-          className="relative aspect-[9/16] md:aspect-auto md:min-h-screen flex flex-col justify-start md:justify-center pt-16 md:pt-28"
+          className="relative aspect-[9/16] md:aspect-auto md:min-h-screen flex flex-col justify-start md:justify-center pt-4 md:pt-28"
         >
           {/* Desktop background */}
           <div
@@ -140,11 +140,11 @@ const ComunicacaoPolitica = () => {
             style={{ backgroundImage: `url('/hero-politica-mobile.png')` }}
           />
 
-          <div className="w-full px-6 md:px-12 lg:px-16 relative z-10 flex-1 flex items-start justify-start py-8 md:py-24 md:items-center md:justify-start">
+          <div className="w-full px-6 md:px-12 lg:px-16 relative z-10 flex-none md:flex-1 flex items-start justify-start py-8 md:py-24 md:items-center md:justify-start">
             <div className="max-w-xl">
               <Reveal>
                 <p
-                  className="text-[11px] uppercase tracking-[0.25em] text-white mb-8 font-light"
+                  className="text-[11px] uppercase tracking-[0.25em] text-white mb-0 md:mb-8 font-light"
                   style={{ textShadow: "0 2px 8px rgba(0,0,0,0.6)" }}
                 >
                   Comunicação Política
@@ -152,7 +152,7 @@ const ComunicacaoPolitica = () => {
               </Reveal>
               <Reveal delay={150}>
                 <h1
-                  className="heading-display text-white mb-8"
+                  className="heading-display text-white mb-0 md:mb-8 !text-[1.1rem] sm:!text-[2rem] md:!text-[3rem] !leading-[1.15]"
                   style={{ textShadow: "0 3px 16px rgba(0,0,0,0.7)" }}
                 >
                   Comunicação estratégica para campanhas políticas.
@@ -160,7 +160,7 @@ const ComunicacaoPolitica = () => {
               </Reveal>
               <Reveal delay={300}>
                 <p
-                  className="body-editorial !text-white mb-10 max-w-lg"
+                  className="body-editorial !text-white mb-0 md:mb-10 max-w-lg text-xs md:text-base !leading-[1.25]"
                   style={{ textShadow: "0 2px 10px rgba(0,0,0,0.6)" }}
                 >
                   Planejamento, conteúdo e produção para candidaturas, mandatos e projetos políticos.
@@ -171,9 +171,9 @@ const ComunicacaoPolitica = () => {
                   href={WHATSAPP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-3 text-sm uppercase tracking-[0.2em] font-medium text-background bg-foreground px-8 py-4 hover:opacity-80 transition-opacity duration-300"
+                  className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] font-medium text-background bg-foreground px-5 py-2.5 md:px-8 md:py-4 md:text-sm hover:opacity-80 transition-opacity duration-300"
                 >
-                  <MessageCircle size={16} strokeWidth={1.5} />
+                  <MessageCircle size={14} strokeWidth={1.5} />
                   Vamos conversar
                 </a>
               </Reveal>
