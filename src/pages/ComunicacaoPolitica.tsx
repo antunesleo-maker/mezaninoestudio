@@ -144,7 +144,7 @@ const ComunicacaoPolitica = () => {
             <div className="max-w-xl">
               <Reveal>
                 <p
-                  className="text-[11px] uppercase tracking-[0.25em] text-white mb-2 md:mb-8 font-light"
+                  className="text-[11px] uppercase tracking-[0.25em] text-white mb-0 md:mb-8 font-light"
                   style={{ textShadow: "0 2px 8px rgba(0,0,0,0.6)" }}
                 >
                   Comunicação Política
