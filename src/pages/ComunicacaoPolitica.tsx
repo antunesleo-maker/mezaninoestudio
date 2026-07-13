@@ -218,17 +218,6 @@ const ComunicacaoPolitica = () => {
               })}
             </div>
 
-            <Reveal delay={200}>
-              <div className="mt-16 md:mt-24 flex justify-center">
-                <button
-                  onClick={() => scrollToContato()}
-                  className="inline-flex items-center gap-3 text-sm uppercase tracking-[0.2em] font-medium text-background bg-foreground px-8 py-4 hover:opacity-80 transition-opacity duration-300"
-                >
-                  <MessageCircle size={16} strokeWidth={1.5} />
-                  Vamos conversar
-                </button>
-              </div>
-            </Reveal>
           </div>
         </section>
 
