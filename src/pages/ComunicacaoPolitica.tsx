@@ -127,7 +127,7 @@ const ComunicacaoPolitica = () => {
       <main id="top">
         {/* HERO */}
         <section
-          className="relative aspect-[9/16] md:aspect-auto md:min-h-screen flex flex-col justify-start md:justify-center pt-4 md:pt-28"
+          className="relative h-screen md:min-h-screen flex flex-col justify-start md:justify-center pt-4 md:pt-28"
         >
           {/* Desktop background */}
           <div
@@ -140,7 +140,7 @@ const ComunicacaoPolitica = () => {
             style={{ backgroundImage: `url('/hero-politica-mobile.png')` }}
           />
 
-          <div className="w-full px-6 md:px-12 lg:px-16 relative z-10 flex-none md:flex-1 flex items-start justify-start py-8 md:py-24 md:items-center md:justify-start">
+          <div className="w-full px-6 md:px-12 lg:px-16 relative z-10 flex h-[40%] md:h-auto md:flex-1 items-start justify-start md:items-center md:justify-start pt-20 pb-4 md:py-24">
             <div className="max-w-xl">
               <Reveal>
                 <p
