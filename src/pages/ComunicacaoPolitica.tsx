@@ -249,12 +249,12 @@ const ComunicacaoPolitica = () => {
                   </Reveal>
                   <Reveal delay={200}>
                     <p className="body-editorial">
-                      Passou por instituições como o Jornal do Commercio, Governo de Pernambuco, Assembleia Legislativa de Pernambuco e Câmara Municipal do Recife, experiência que consolidou uma visão integrada da comunicação política, do planejamento à produção de conteúdo, cobertura audiovisual e materiais gráficos.
+                      Passou por instituições como o Jornal do Commercio, Governo de Pernambuco, Assembleia Legislativa de Pernambuco e Câmara Municipal do Recife, experiência que consolidou uma visão integrada da comunicação política, do planejamento estratégico à produção de conteúdo, cobertura audiovisual e materiais gráficos.
                     </p>
                   </Reveal>
                   <Reveal delay={300}>
                     <p className="body-editorial">
-                      Designer formado pela UFPE, sua origem em web design e arquitetura da informação orienta até hoje sua leitura sobre narrativa, sistemas digitais e comportamento de público.
+                      É formado pela UFPE e iniciou sua trajetória em ambientes digitais, base que orienta até hoje sua leitura sobre narrativa e comportamento de público.
                     </p>
                   </Reveal>
                 </div>
