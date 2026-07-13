@@ -140,7 +140,7 @@ const ComunicacaoPolitica = () => {
             style={{ backgroundImage: `url('/hero-politica-mobile.png')` }}
           />
 
-          <div className="w-full px-6 md:px-12 lg:px-16 relative z-10 flex-none md:flex-1 flex items-start justify-start py-8 md:py-24 md:items-center md:justify-start">
+          <div className="w-full px-6 md:px-12 lg:px-16 relative z-10 flex h-[40%] md:h-auto md:flex-1 items-start justify-center md:items-center md:justify-start py-8 md:py-24">
             <div className="max-w-xl">
               <Reveal>
                 <p
