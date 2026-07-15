@@ -190,10 +190,10 @@ const ComunicacaoPolitica = () => {
         </section>
 
         {/* SERVIÇOS */}
-        <section id="servicos" className="section-spacing border-t border-subtle bg-background">
+        <section id="servicos" className="section-spacing border-t border-subtle" style={{ backgroundColor: "#666666" }}>
           <div className="container-editorial">
             <Reveal>
-              <p className="text-sm uppercase tracking-widest text-muted-foreground mb-8 font-light">
+              <p className="text-sm uppercase tracking-widest text-foreground mb-8 font-light">
                 Nossos Serviços
               </p>
             </Reveal>
@@ -208,10 +208,10 @@ const ComunicacaoPolitica = () => {
                 const Icon = s.icon;
                 return (
                   <Reveal key={s.title} delay={i * 80}>
-                    <div className="bg-background p-8 md:p-12 h-full flex flex-col gap-6">
+                    <div className="p-8 md:p-12 h-full flex flex-col gap-6">
                       <Icon size={28} strokeWidth={1.25} className="text-foreground" />
                       <h3 className="heading-subsection text-foreground">{s.title}</h3>
-                      <p className="body-editorial">{s.description}</p>
+                      <p className="body-editorial !text-foreground">{s.description}</p>
                     </div>
                   </Reveal>
                 );
