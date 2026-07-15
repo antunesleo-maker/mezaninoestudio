@@ -211,7 +211,7 @@ const ComunicacaoPolitica = () => {
                     <div className="p-8 md:p-12 h-full flex flex-col gap-6">
                       <Icon size={28} strokeWidth={1.25} className="text-foreground" />
                       <h3 className="heading-subsection text-foreground">{s.title}</h3>
-                      <p className="body-editorial text-foreground">{s.description}</p>
+                      <p className="body-editorial !text-foreground">{s.description}</p>
                     </div>
                   </Reveal>
                 );
