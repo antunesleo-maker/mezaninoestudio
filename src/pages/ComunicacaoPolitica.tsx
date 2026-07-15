@@ -203,12 +203,12 @@ const ComunicacaoPolitica = () => {
               </h2>
             </Reveal>
 
-            <div className="grid md:grid-cols-2 gap-px bg-foreground/10 border border-foreground/10">
+            <div className="grid md:grid-cols-2 gap-6 md:gap-8">
               {services.map((s, i) => {
                 const Icon = s.icon;
                 return (
                   <Reveal key={s.title} delay={i * 80}>
-                    <div className="p-8 md:p-12 h-full flex flex-col gap-6">
+                    <div className="p-8 md:p-12 h-full flex flex-col gap-6 bg-background border border-border">
                       <Icon size={28} strokeWidth={1.25} className="text-foreground" />
                       <h3 className="heading-subsection text-foreground">{s.title}</h3>
                       <p className="body-editorial !text-foreground">{s.description}</p>
@@ -217,6 +217,7 @@ const ComunicacaoPolitica = () => {
                 );
               })}
             </div>
+
 
           </div>
         </section>
