@@ -190,7 +190,7 @@ const ComunicacaoPolitica = () => {
         </section>
 
         {/* SERVIÇOS */}
-        <section id="servicos" className="section-spacing border-t border-subtle bg-background">
+        <section id="servicos" className="section-spacing border-t border-subtle" style={{ backgroundColor: "#666666" }}>
           <div className="container-editorial">
             <Reveal>
               <p className="text-sm uppercase tracking-widest text-muted-foreground mb-8 font-light">
