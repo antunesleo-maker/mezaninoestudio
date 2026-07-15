@@ -208,7 +208,7 @@ const ComunicacaoPolitica = () => {
                 const Icon = s.icon;
                 return (
                   <Reveal key={s.title} delay={i * 80}>
-                    <div className="bg-background p-8 md:p-12 h-full flex flex-col gap-6">
+                    <div className="p-8 md:p-12 h-full flex flex-col gap-6">
                       <Icon size={28} strokeWidth={1.25} className="text-foreground" />
                       <h3 className="heading-subsection text-foreground">{s.title}</h3>
                       <p className="body-editorial">{s.description}</p>
