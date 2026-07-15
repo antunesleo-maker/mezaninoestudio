@@ -264,7 +264,7 @@ const ComunicacaoPolitica = () => {
         </section>
 
         {/* CONTATO / CHAMADA FINAL */}
-        <section id="contato" className="section-fullscreen bg-background border-t border-subtle">
+        <section id="contato" className="section-light section-fullscreen border-t border-subtle">
           <div className="container-editorial py-24 md:py-32">
             <div className="max-w-3xl">
               <Reveal>
