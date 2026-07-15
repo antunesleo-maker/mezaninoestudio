@@ -222,7 +222,7 @@ const ComunicacaoPolitica = () => {
         </section>
 
         {/* EXPERIÊNCIA */}
-        <section id="experiencia" className="section-light">
+        <section id="experiencia" className="bg-background border-t border-subtle">
           <div className="container-editorial py-24 md:py-32">
             <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start">
               <Reveal>
