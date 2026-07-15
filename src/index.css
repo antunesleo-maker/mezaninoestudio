@@ -114,8 +114,13 @@
     border-color: hsl(var(--border-subtle));
   }
 
-  /* Light section */
+  /* Light section — remap semantic tokens so Tailwind classes flip automatically */
   .section-light {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 41%;
+    --muted-foreground: 0 0% 45%;
+    --border: 0 0% 88%;
+    --border-subtle: 0 0% 88%;
     background-color: hsl(var(--light-bg));
     color: hsl(var(--light-fg));
   }
@@ -135,6 +140,7 @@
   .section-light .border-border {
     border-color: hsl(var(--light-border));
   }
+
 
   /* Scroll indicator animation */
   @keyframes scroll-bounce {

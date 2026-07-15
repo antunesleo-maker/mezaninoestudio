@@ -190,7 +190,7 @@ const ComunicacaoPolitica = () => {
         </section>
 
         {/* SERVIÇOS */}
-        <section id="servicos" className="section-spacing border-t border-subtle" style={{ backgroundColor: "#666666" }}>
+        <section id="servicos" className="section-light section-spacing border-t border-subtle">
           <div className="container-editorial">
             <Reveal>
               <p className="text-sm uppercase tracking-widest text-foreground mb-8 font-light">
@@ -222,7 +222,7 @@ const ComunicacaoPolitica = () => {
         </section>
 
         {/* EXPERIÊNCIA */}
-        <section id="experiencia" className="section-light">
+        <section id="experiencia" className="bg-background border-t border-subtle">
           <div className="container-editorial py-24 md:py-32">
             <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start">
               <Reveal>
@@ -264,7 +264,7 @@ const ComunicacaoPolitica = () => {
         </section>
 
         {/* CONTATO / CHAMADA FINAL */}
-        <section id="contato" className="section-fullscreen bg-background border-t border-subtle">
+        <section id="contato" className="section-light section-fullscreen border-t border-subtle">
           <div className="container-editorial py-24 md:py-32">
             <div className="max-w-3xl">
               <Reveal>
