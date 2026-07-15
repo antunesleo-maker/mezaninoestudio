@@ -155,12 +155,12 @@ const ComunicacaoPolitica = () => {
                   className="heading-display text-white mb-6 md:mb-8 !text-[1.65rem] sm:!text-[2rem] md:!text-[3rem] !leading-[1.3] md:!leading-[1.15]"
                   style={{ textShadow: "0 3px 16px rgba(0,0,0,0.7)" }}
                 >
-                  Comunicação estratégica para campanhas políticas.
+                  Comunicação estratégica para campanhas políticas
                 </h1>
               </Reveal>
               <Reveal delay={300}>
                 <p
-                  className="body-editorial !text-white mb-7 md:mb-10 max-w-lg text-xs md:text-base !leading-[1.25]"
+                  className="body-editorial !text-white mb-7 md:mb-10 max-w-lg text-xm md:text-base !leading-[1.25]"
                   style={{ textShadow: "0 2px 10px rgba(0,0,0,0.6)" }}
                 >
                   Planejamento, conteúdo e produção para candidaturas, mandatos e projetos políticos.
