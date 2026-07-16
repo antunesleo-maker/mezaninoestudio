@@ -318,6 +318,19 @@ const ComunicacaoPolitica = () => {
           </div>
         </section>
 
+        {/* Transição visual — mesma faixa do site institucional */}
+        <section className="bg-background">
+          <Reveal>
+            <div className="w-full">
+              <img
+                src={capaImage}
+                alt="Mezanino Estúdio Criativo — identidade visual"
+                className="w-full h-[50vh] md:h-[70vh] object-cover"
+              />
+            </div>
+          </Reveal>
+        </section>
+
         {/* Footer */}
         <footer className="border-t border-subtle bg-background py-10">
           <div className="container-editorial flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
