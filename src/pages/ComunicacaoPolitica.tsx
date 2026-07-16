@@ -325,7 +325,7 @@ const ComunicacaoPolitica = () => {
               <img
                 src={capaImage}
                 alt="Mezanino Estúdio Criativo — identidade visual"
-                className="w-full h-[50vh] md:h-[70vh] object-cover"
+                className="w-full h-[40vh] md:h-[55vh] object-cover"
               />
             </div>
           </Reveal>
