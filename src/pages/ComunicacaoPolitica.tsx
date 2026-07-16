@@ -4,6 +4,7 @@ import Reveal from "@/components/Reveal";
 import heroBg from "@/assets/cabeca-site-ideias.png.asset.json";
 import heroMobileBg from "@/assets/cabeca-site-ideias-mobile.png.asset.json";
 import founderPhoto from "@/assets/leonardo-antunes.jpeg";
+import capaImage from "@/assets/mezaninoestudio_capa.jpeg";
 
 const WHATSAPP_URL = "https://wa.me/5581991087214";
 const EMAIL = "mezaninoestudio@gmail.com";
@@ -315,6 +316,19 @@ const ComunicacaoPolitica = () => {
               </Reveal>
             </div>
           </div>
+        </section>
+
+        {/* Transição visual — mesma faixa do site institucional */}
+        <section className="bg-background">
+          <Reveal>
+            <div className="w-full">
+              <img
+                src={capaImage}
+                alt="Mezanino Estúdio Criativo — identidade visual"
+                className="w-full h-[50vh] md:h-[70vh] object-cover"
+              />
+            </div>
+          </Reveal>
         </section>
 
         {/* Footer */}
