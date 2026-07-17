@@ -200,7 +200,7 @@ const ComunicacaoPolitica = () => {
             </Reveal>
             <Reveal delay={100}>
               <h2 className="heading-section text-foreground max-w-3xl mb-16 md:mb-24">
-                Queremos ajudar você a conquistar resultados de forma mais rápida e eficiente por meio de estratégias de comunicação, planejamento, produção de conteúdo e mobilização.
+                Quero ajudar você a conquistar resultados de forma mais rápida e eficiente por meio de estratégias de comunicação, planejamento, produção de conteúdo e mobilização.
               </h2>
             </Reveal>
 
