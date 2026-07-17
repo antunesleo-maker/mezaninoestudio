@@ -19,7 +19,7 @@ const services = [
     icon: Compass,
     title: "Estratégia de Comunicação",
     description:
-      "Diagnosticamos sua comunicação e sua atuação política para construir um planejamento alinhado aos objetivos da campanha ou mandato, fortalecendo posicionamento, presença pública e relacionamento com o eleitorado.",
+      "Diagnóstico da comunicação e da atuação política para construção de um planejamento alinhado aos objetivos da campanha ou mandato, fortalecendo posicionamento, presença pública e relacionamento com o eleitorado.",
   },
   {
     icon: Share2,
