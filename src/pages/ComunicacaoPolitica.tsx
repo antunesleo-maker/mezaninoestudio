@@ -37,7 +37,7 @@ const services = [
     icon: Camera,
     title: "Cobertura Mobile",
     description:
-      "Produção de conteúdo em campo para campanhas, com captação de fotos e vídeos e edição ágil para publicação nas redes sociais.",
+      "Produção de conteúdo em campo para campanhas, com captação de fotos e vídeos e edição ágil para publicação nas redes sociais durante caminhadas, carreatas, visitas, plenárias, comícios e demais atividades eleitorais.",
   },
 ];
 
