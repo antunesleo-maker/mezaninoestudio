@@ -153,7 +153,7 @@ const ComunicacaoPolitica = () => {
               </Reveal>
               <Reveal delay={150}>
                 <h1
-                  className="heading-display text-white mb-6 md:mb-8 !text-[2rem] sm:!text-[2rem] md:!text-[3rem] !leading-[1.3] md:!leading-[1.15]"
+                  className="heading-display text-white mb-6 md:mb-8 !text-[2rem] sm:!text-[2rem] md:!text-[3rem] !leading-[1.15] md:!leading-[1.15]"
                   style={{ textShadow: "0 3px 16px rgba(0,0,0,0.7)" }}
                 >
                   Comunicação estratégica para campanhas políticas
