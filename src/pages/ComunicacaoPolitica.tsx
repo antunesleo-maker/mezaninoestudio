@@ -128,7 +128,7 @@ const ComunicacaoPolitica = () => {
       <main id="top">
         {/* HERO */}
         <section
-          className="relative h-screen md:min-h-screen flex flex-col justify-start md:justify-center pt-4 md:pt-28"
+          className="relative h-[90vh] md:min-h-screen flex flex-col justify-start md:justify-center pt-4 md:pt-28"
         >
           {/* Desktop background */}
           <div
